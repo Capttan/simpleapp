@@ -18,7 +18,7 @@ deploy:
   # local_dir: dist/myform
   app: stark-coast-48290
   on:
-    branch: master #heroku branch
+    branch: master #github repo branch
 
 notifications:
   email:
