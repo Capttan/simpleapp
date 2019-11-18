@@ -5,10 +5,11 @@ dist: bionic
 sudo: required
 branches:
   only:
-   - master
+   - master #github repo branch
 before_script:
   - npm install -g @angular/cli
 script:
+  # add node environment variables here
   - ng build --aot --prod #--base-href https://myformheroku.herokuapp.com/
 deploy:
   provider: heroku
@@ -17,7 +18,7 @@ deploy:
   # local_dir: dist/myform
   app: stark-coast-48290
   on:
-    branch: master
+    branch: master #heroku branch
 
 notifications:
   email:
